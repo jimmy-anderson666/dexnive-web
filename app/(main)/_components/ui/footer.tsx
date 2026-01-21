@@ -1,6 +1,34 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
+import { TextAnimate } from "@/app/components/ui/text-animate";
+
+const text = "DEXNIVE";
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.08, // delay between letters
+    },
+  },
+};
+
+const letterVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 120,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.9,
+      ease: "easeOut",
+    },
+  },
+};
+
 const Footer = () => {
   return (
     <footer className="relative z-10 overflow-hidden bg-black pt-32 pb-[20%]">
@@ -9,9 +37,8 @@ const Footer = () => {
         alt="ellipse"
         width={500}
         height={500}
-        className="absolute bottom-0 left-0"
+        className="absolute bottom-0 z-10 left-0"
       />
-      <div className="absolute inset-0  -top-7 bg-linear-to-t from-purple-900/30 via-black to-black" />
 
       <div className="mx-auto w-[80%] relative z-30 max-w-screen-2xl">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
@@ -78,22 +105,18 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-  <motion.div
-  className="pointer-events-none max-w-screen-2xl mx-auto absolute -bottom-56 left-[47%] -translate-x-1/2 select-none text-center -z-10"
-  initial={{ opacity: 0, y: 160 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0 }}
-  transition={{
-    duration: 1.2,
-    ease: "easeOut",
-  }}
->
-  <h1 className="bg-white/10 bg-clip-text text-[25vw] font-[1000] tracking-tight text-transparent">
-    DEXNIVE
-  </h1>
-</motion.div>
-
+      <TextAnimate
+        duration={1}
+        by="character"
+        style={{
+          WebkitTextStrokeWidth: "20px",
+          WebkitTextStrokeColor: "#0f0f0f",
+          fontWeight: 1000,
+        }}
+        className="absolute uppercase tracking-wide text-[#65656526] -bottom-40 -left-10 font-black  text-[24vw] text-nowrap!"
+      >
+        Dexnive
+      </TextAnimate>
     </footer>
   );
 };

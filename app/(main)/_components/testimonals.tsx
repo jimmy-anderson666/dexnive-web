@@ -50,15 +50,15 @@ const Testimonals = () => {
         className="absolute -top-20 left-0 w-full h-[150%] -z-10 object-cover"
       />
       <div className="max-w-screen-2xl mx-auto md:w-[50%] text-center">
-        <h1 className="text-3xl md:text-6xl font-bold text-center">
+        <h1 className="text-3xl leading-[1.1] md:text-6xl font-bold text-center">
           What People Say About Working With Dexnive
         </h1>
-        <p className="text-lg font-medium pt-4">
+      </div>
+        <p className="text-lg md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
           Here’s what teams and founders say about working with us, in their own
           words.
         </p>
-      </div>
-      <div className="w-screen py-24">
+      <div className="w-screen py-10">
         <InfiniteMovingCards
           items={testimonials1}
           direction="right"

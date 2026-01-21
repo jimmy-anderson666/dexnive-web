@@ -26,7 +26,7 @@ const Hero = () => {
       </motion.div>
 
       <div className="max-w-screen-2xl mx-auto relative z-20">
-        <h1 className="text-3xl md:text-6xl md:w-[50%] w-full mx-auto text-center font-bold">
+        <h1 className="text-3xl md:text-6xl leading-[1.1] md:w-[50%] w-full mx-auto text-center font-bold">
           A Technical Catalyst for
           Thoughtful Digital Experiences
         </h1>
@@ -36,7 +36,7 @@ const Hero = () => {
           creative execution.
         </p>
         <div className="md:w-[50%] w-full pt-4 mx-auto text-center">
-          <button className="bg-linear-to-l text-sm shadow-[0px_0px_30px_0px_rgba(132,14,205,0.25)] from-[#FFFFFF]/20 to-[#FFFFFF73]/10 text-white border-2 border-[#840ECD] px-10 py-3 rounded-full">
+          <button className="bg-linear-to-l transition-all ease-linear hover:shadow-[0px_0px_30px_0px_rgba(132,14,205,1)] hover:bg-[#840ECD] text-sm shadow-[0px_0px_30px_0px_rgba(132,14,205,0.25)] from-[#FFFFFF]/20 to-[#FFFFFF73]/10 text-white border-2 border-[#840ECD] px-10 py-3 rounded-full">
             Explore the Possibilities.
           </button>
         </div>

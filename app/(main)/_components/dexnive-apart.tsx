@@ -18,15 +18,15 @@ const DexniveApart = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
       <div className="max-w-screen-2xl mx-auto md:w-[40%] text-center">
-        <h1 className="text-3xl md:text-6xl font-bold text-center">
+        <h1 className="text-3xl md:text-6xl leading-[1.1] font-bold text-center">
           So, What Makes Dexnive Different?
         </h1>
-        <p className="text-lg font-medium pt-4 text-center">
+      </div>
+        <p className="text-lg   md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
           There’s no “standard process” here. And we understand that each
           project is unique so your project with it’s own uniqueness. The team
           works alongside you and make sure everything stays manageable.
         </p>
-      </div>
       <div className="min-h-screen flex md:w-[60%] mx-auto items-center justify-center px-6 py-20">
         <div className="grid md:grid-cols-12 relative z-30 md:grid-rows-10 gap-4 max-w-7xl w-full">
           {/* Card 1 */}

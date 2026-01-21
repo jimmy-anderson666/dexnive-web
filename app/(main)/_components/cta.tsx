@@ -7,7 +7,7 @@ export default function CTA() {
     <section className="relative py-24">
       <div className="absolute inset-0 -z-10 bg-linear-to-b from-black/10 via-[#500790] to-black/10 blur-3xl" />
 
-      <div className="mx-auto md:w-[65%] max-w-screen-2xl rounded-2xl border border-white/10 bg-white/15 backdrop-blur-2xl p-10">
+      <div className="mx-auto md:w-[65%] max-w-screen-2xl rounded-2xl border border-white/10 bg-white/15 backdrop-blur-2xl p-6">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div>
             <h3 className="text-4xl font-semibold text-white">
@@ -101,7 +101,7 @@ export default function CTA() {
           {/* RIGHT */}
           <div className="relative flex items-center justify-center ">
             <Image
-              src="/images/home/cta/box.png"
+              src="/images/home/cta/mind.png"
               alt="cta"
               width={760}
               height={820}

@@ -71,7 +71,7 @@ const cardVariants: Variants = {
 
 const Working = () => {
   return (
-    <div className="relative">
+    <div className="relative py-10">
       <Image
         src="/images/home/bg.png"
         alt="working"
@@ -80,17 +80,17 @@ const Working = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
       <div className="max-w-screen-2xl mx-auto md:w-[40%] text-center">
-        <h1 className="text-3xl md:text-6xl font-bold text-center">
+        <h1 className="text-3xl md:text-6xl leading-[1.1] font-bold text-center">
           What Working With Dexnive Looks Like
         </h1>
-        <p className="text-lg font-medium pt-4 text-center">
+      </div>
+        <p className="text-lg   md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
           We don’t overthink how we work together or following an official
           workflow because each project requires different workflows so working
           with us doesn’t mean learning a complicated process or fitting into
           someone else’s system. Things stay flexible, communication stays open.
           So you’re never left guessing what’s happening.
         </p>
-      </div>
       <div className="max-w-screen-2xl mx-auto w-[80%] py-8">
         {processSteps.map((step, index) => (
           <motion.div

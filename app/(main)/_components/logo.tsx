@@ -6,8 +6,8 @@ type Props = {}
 
 const Logo = (props: Props) => {
   return (
-    <Link href="/">
-    <Image src="/logo.png" alt="logo" width={150} height={150} />
+    <Link className='relative z-40' href="/">
+    <Image src="/logo2.png" alt="logo" width={150} height={150} />
     </Link>
   )
 }

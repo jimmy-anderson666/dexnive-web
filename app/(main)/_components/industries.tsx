@@ -35,16 +35,16 @@ const industries = [
 
 const Industries = () => {
   return (
-    <div className="py-10">
+    <div className="py-20">
       <div className="max-w-screen-2xl mx-auto md:w-[40%] text-center">
-        <h3 className="text-2xl font-bold">Industries We Work With</h3>
-        <h1 className=" text-3xl md:text-6xl font-bold">Adding Value Across Teams</h1>
-        <p className="text-lg font-medium pt-4">
+        <h3 className="text-2xl font-bold ">Industries We Work With</h3>
+        <h1 className=" text-3xl md:text-6xl font-bold leading-[1.1]">Adding Value Across Teams</h1>
+      </div>
+        <p className="text-lg md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
           Working with different kinds of businesses and industries has taught
           us a lot. It helps us quickly understand industry-specific challenges
           to build smarter solutions.
         </p>
-      </div>
       <div className="max-w-screen-2xl p-24 relative overflow-hidden rounded-4xl mx-auto md:w-[80%] my-12 border border-[#53029B40] shadow-[0_0_30px_0_#840ECD40]">
         <Image
           src="/images/home/industries/shadow.png"
@@ -62,7 +62,7 @@ const Industries = () => {
             className="absolute -z-10 lg:block hidden top-0 left-0 w-full h-full object-cover"
           />
           {industries.map((industry, index) => (
-            <div key={index} className="md:w-[30%] group">
+            <div key={index} className="md:w-[30%] group p-4">
               <Image
                 src={industry.icon}
                 alt={industry.title}

@@ -57,7 +57,7 @@ const cardVariant:Variants = {
 
 const CreateWithDexnive = () => {
   return (
-    <div className=" py-10  relative">
+    <div className=" py-20  relative">
       <Image
         src="/images/home/bg.png"
         alt=""
@@ -70,14 +70,14 @@ const CreateWithDexnive = () => {
         <h3 className="text-2xl font-bold">
           <span className="text-primary">Dexnive</span> in Action
         </h3>
-        <h1 className="text-3xl md:text-6xl font-bold">What You Can Create With Dexnive</h1>
-        <p className="text-lg font-medium pt-4">
+        <h1 className="text-3xl md:text-6xl font-bold leading-[1.1]">What You Can Create With Dexnive</h1>
+      </div>
+        <p className="text-lg md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
           Dexnive might sound like just another development company, and that’s
           fair. But we’re not here to make promises that we can’t keep. We are
           here to build long-term. Something that looks like the way you just
           imagined it.
         </p>
-      </div>
 
       <div className="grid grid-cols-1 max-w-screen-2xl mx-auto w-[80%] md:grid-cols-2 lg:grid-cols-3 py-12 gap-2 relative z-20">
         {services.map((service, index) => (
@@ -88,7 +88,7 @@ const CreateWithDexnive = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }} 
             variants={cardVariant}
-            className="bg-[#0A0118] rounded-xl overflow-hidden group relative pb-8 border-[#840ECDBF] border-2 shadow-md"
+            className="bg-[#0A0118] rounded-xl overflow-hidden group relative pb-8 border-[#840ECDBF] border-4 shadow-md"
           >
             <Image
               src={service.image}

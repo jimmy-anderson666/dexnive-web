@@ -5,11 +5,11 @@ type Props = {};
 
 const Vision = (props: Props) => {
   return (
-    <div>
-      <h1 className="text-3xl md:text-6xl font-bold md:w-[50%] mx-auto max-w-screen-2xl text-center">
+    <div className="py-20">
+      <h1 className="text-3xl md:text-6xl  font-bold md:w-[50%] mx-auto max-w-screen-2xl text-center">
         Vision & Philosophy
       </h1>
-      <div className="flex lg:flex-row flex-col py-20 items-center gap-4 justify-center max-w-screen-2xl mx-auto md:w-[80%]">
+      <div className="flex lg:flex-row py-20 flex-col  items-center gap-4 justify-center max-w-screen-2xl mx-auto md:w-[80%]">
         <div className="md:w-[620px] group relative overflow-hidden h-[400px] rounded-4xl border border-[#53029B]">
           <Image
             src="/images/home/vision/vision.png"

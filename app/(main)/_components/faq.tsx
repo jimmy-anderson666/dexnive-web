@@ -71,20 +71,20 @@ function FaqItem({ faq }: { faq: FAQ }) {
 
 export default function FaqSection() {
   return (
-    <section className="relative overflow-hidden  py-24">
+    <section className="relative overflow-hidden  py-20">
 
 
       <div className="relative mx-auto max-w-screen-2xl text-center md:w-[40%] px-4">
-        <h2 className="text-center text-2xl font-bold text-white">
+        <h2 className="text-center text-2xl  font-bold text-white">
           Frequently Asked Questions
         </h2>
-<h1 className="text-center text-3xl md:text-6xl font-bold text-white">We’re obsessed with the "Why."</h1>
-        <p className=" mt-4 text-lg">
+<h1 className="text-center text-3xl md:text-6xl leading-[1.1] font-bold text-white">We’re obsessed with the "Why."</h1>
+
+        </div>
+        <p className=" mt-4 md:w-[60%] mx-auto max-w-screen-2xl text-center text-lg">
           You don’t have to believe in our promises. Here are the words of our
           clients who worked with us.
         </p>
-
-        </div>
         <div className="mt-16 grid max-w-screen-2xl mx-auto w-[80%] gap-6 md:grid-cols-2">
           <div className="space-y-4">
             {leftFaqs.map((faq, i) => (
