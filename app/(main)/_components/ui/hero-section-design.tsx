@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 const AnimatedPath = ({ d, delay = 0 }: { d: string; delay?: number }) => (
   <>
-
     <path
       d={d}
       stroke="#D2D2D2"
@@ -14,15 +13,14 @@ const AnimatedPath = ({ d, delay = 0 }: { d: string; delay?: number }) => (
       fill="none"
     />
 
-
     <motion.path
       d={d}
       fill="none"
       stroke="#8B5CF6"
       strokeWidth="5"
       strokeDasharray="80 1200"
-      initial={{ strokeDashoffset: 1280 }}
-      animate={{ strokeDashoffset: 0 }}
+      initial={{ strokeDashoffset: 80 }}
+      animate={{ strokeDashoffset: -1200 }}
       transition={{
         duration: 3.5,
         ease: "linear",
@@ -38,9 +36,21 @@ const AnimatedPath = ({ d, delay = 0 }: { d: string; delay?: number }) => (
 
 const HeroSectionDesign = () => {
   return (
-    <div className="flex items-center max-w-screen-2xl mx-auto  justify-center relative">
-     <Image src={"/images/home/l-icon.png"} alt="icons" width={220} height={220} className="absolute left-[8%] top-28" />
-     <Image src={"/images/home/r-icon.png"} alt="icons" width={230} height={230} className="absolute right-[7%] top-[100px]" />
+    <div className="flex items-center max-w-screen-2xl mx-auto w-fit  justify-center relative">
+      <Image
+        src={"/images/home/l-icon.png"}
+        alt="icons"
+        width={220}
+        height={220}
+        className="absolute  xl:left-[7.2%] xl:w-[200px] 2xl:w-[220px]  2xl:left-[6.9%] xl:top-[120px] 2xl:top-28"
+      />
+      <Image
+        src={"/images/home/r-icon.png"}
+        alt="icons"
+        width={230}
+        height={230}
+        className="absolute xl:right-[6.2%] xl:w-[210px] 2xl:w-[220px]  2xl:right-[6.4%] xl:top-[110px] 2xl:top-[105px]"
+      />
       <svg
         width="674"
         height="384"
@@ -62,7 +72,7 @@ const HeroSectionDesign = () => {
           delay={0.8}
         />
         <AnimatedPath
-          d="M874.558 121.291H688.365C673.145 121.291 677.711 121.291 662.003 136.511L425.565 366.334C421.168 370.731 -149.755 369.378 -166.232 369.378H-167.004"
+          d="M874.558 121.291H688.365C673.145 121.291 677.711 121.291 662.003 136.511L-167 942"
           delay={1.4}
         />
       </svg>
@@ -89,7 +99,6 @@ const HeroSectionDesign = () => {
         </svg>
       </div>
 
-     
       <svg
         width="674"
         height="384"
@@ -110,7 +119,7 @@ const HeroSectionDesign = () => {
           delay={0.5}
         />
         <AnimatedPath
-          d="M0.507812 133.429H182.642C197.862 133.429 193.296 133.429 209.004 148.65L445.442 378.473C449.839 382.87 1051.2 381.517 1067.68 381.517H1068.45"
+          d="M0.507812 133.429H182.642C197.862 133.429 193.296 133.429 209.004 148.65L1068 984"
           delay={1.6}
         />
       </svg>

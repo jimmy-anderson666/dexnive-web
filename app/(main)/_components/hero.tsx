@@ -8,20 +8,20 @@ import HeroSectionDesign from "./ui/hero-section-design";
 const Hero = () => {
   return (
     <div className="relative mx-auto max-h-[1000px] py-10">
-      <Image src={"/images/home/grad.png"} alt="bg" width={1500} height={1500} className="absolute z-20 bottom-5 w-screen left-0  object-cover"/>
+      <Image src={"/images/home/grad.png"} alt="bg" width={1500} height={1500} className="absolute z-20 bottom-5 2xl:bottom-10 w-screen  left-0  object-cover"/>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="absolute z-10 object-cover w-screen h-full max-h-[700px]  left-0"
+        className="absolute z-10 object-cover w-screen h-full max-h-[700px]  "
       >
         <Image
           src="/images/home/bg3.png"
           alt="hero"
-          width={1500}
-          height={1500}
-          className="w-full h-full object-cover"
+          width={1700}
+          height={1700}
+          className="w-screen h-full object-cover"
         />
       </motion.div>
 
