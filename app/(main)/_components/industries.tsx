@@ -1,3 +1,4 @@
+import SubHeader from "@/components/ui/sub-header";
 import Image from "next/image";
 
 const industries = [
@@ -37,7 +38,7 @@ const Industries = () => {
   return (
     <div className="py-20">
       <div className="max-w-screen-2xl mx-auto md:w-[40%] text-center">
-        <h3 className="text-2xl font-bold ">Industries We Work With</h3>
+        <SubHeader title="Industries We Work With" />
         <h1 className=" text-3xl md:text-6xl font-bold leading-[1.1]">Adding Value Across Teams</h1>
       </div>
         <p className="text-lg md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">

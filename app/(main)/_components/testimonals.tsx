@@ -1,4 +1,4 @@
-import { InfiniteMovingCards } from "@/app/components/ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Image from "next/image";
 
 const testimonials1 = [
@@ -54,10 +54,10 @@ const Testimonals = () => {
           What People Say About Working With Dexnive
         </h1>
       </div>
-        <p className="text-lg md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
-          Here’s what teams and founders say about working with us, in their own
-          words.
-        </p>
+      <p className="text-lg md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
+        Here’s what teams and founders say about working with us, in their own
+        words.
+      </p>
       <div className="w-screen py-10">
         <InfiniteMovingCards
           items={testimonials1}

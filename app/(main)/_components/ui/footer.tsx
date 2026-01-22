@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
-import { TextAnimate } from "@/app/components/ui/text-animate";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 const text = "DEXNIVE";
 

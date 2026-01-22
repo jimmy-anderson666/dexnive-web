@@ -4,19 +4,19 @@ const ContactUs = () => {
   return (
     <div>
       <Image
-        src={"/images/contact-us/Rectangle.png"}
+        src={"/images/blue-hue.png"}
         alt="bg"
         width={1500}
         height={1500}
         className="absolute z-20 top-0 w-screen  left-0  object-cover"
       />
-      <Image
+      {/* <Image
         src={"/images/contact-us/grad.png"}
         alt="bg"
         width={1200}
         height={1200}
         className="absolute z-10 top-0 w-screen  left-0  object-cover"
-      />
+      /> */}
       <div className="max-w-screen-2xl mx-auto relative py-20 z-20">
         <h1 className="text-3xl md:text-6xl md:w-[40%] w-full mx-auto text-center font-bold">
           Wondering if Dexnive is the right fit?

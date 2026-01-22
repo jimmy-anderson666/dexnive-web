@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion, Variants } from "framer-motion";
+import Services from "@/components/services";
 export const services = [
   {
     title: "Mobile App Development",
@@ -42,7 +43,7 @@ export const services = [
   },
 ];
 
-const cardVariant:Variants = {
+const cardVariant: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: (i: number) => ({
     opacity: 1,
@@ -58,54 +59,11 @@ const cardVariant:Variants = {
 const CreateWithDexnive = () => {
   return (
     <div className=" py-20  relative">
-      <Image
-        src="/images/home/bg.png"
-        alt=""
-        width={1500}
-        height={1500}
-        className="absolute top-0 left-0 w-screen h-full z-10"
+      <Services
+        services={services}
+        heading="What Exactly Do We Do"
+        p="Dexnive might sound like just another development company, and that’s fair. But we’re not here to make promises that we can’t keep. We are here to build long-term. Something that looks like the way you just imagined it."
       />
-
-      <div className="md:w-[40%] max-w-screen-2xl mx-auto text-center relative z-20">
-        <h3 className="text-2xl font-bold">
-          <span className="text-primary">Dexnive</span> in Action
-        </h3>
-        <h1 className="text-3xl md:text-6xl font-bold leading-[1.1]">What You Can Create With Dexnive</h1>
-      </div>
-        <p className="text-lg md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
-          Dexnive might sound like just another development company, and that’s
-          fair. But we’re not here to make promises that we can’t keep. We are
-          here to build long-term. Something that looks like the way you just
-          imagined it.
-        </p>
-
-      <div className="grid grid-cols-1 max-w-screen-2xl mx-auto w-[80%] md:grid-cols-2 lg:grid-cols-3 py-12 gap-2 relative z-20">
-        {services.map((service, index) => (
-          <motion.div
-            key={service.title}
-            custom={index % 3} 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} 
-            variants={cardVariant}
-            className="bg-[#0A0118] rounded-xl overflow-hidden group relative pb-8 border-[#840ECDBF] border-4 shadow-md"
-          >
-            <Image
-              src={service.image}
-              alt={service.title}
-              width={500}
-              height={500}
-              className="group-hover:scale-110 transition-all duration-300 ease-linear"
-            />
-            <div className="px-8">
-              <h2 className="text-lg font-bold relative z-30">{service.title}</h2>
-              <p className="text-sm mt-2 text-[#9B96B0] relative z-30">
-                {service.description}
-              </p>
-            </div>
-          </motion.div>
-        ))}
-      </div>
     </div>
   );
 };
