@@ -31,7 +31,8 @@ const letterVariants: Variants = {
 
 const Footer = () => {
   return (
-    <footer className="relative z-10 overflow-hidden bg-black pt-32 pb-[20%]">
+    <footer className="relative z-10 overflow-hidden pt-32 pb-[20%]">
+      <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(180deg,transparent_0%,#000000_150px)] -z-10" />
       <Image
         src={"/images/elip.png"}
         alt="ellipse"
