@@ -58,10 +58,11 @@ const cardVariant: Variants = {
 
 const CreateWithDexnive = () => {
   return (
-    <div className=" py-20  relative">
+    <div className="  relative">
       <Services
+      sHeading="Dexnive In Action"
         services={services}
-        heading="What Exactly Do We Do"
+        heading="What Exactly Do We Do?"
         p="Dexnive might sound like just another development company, and that’s fair. But we’re not here to make promises that we can’t keep. We are here to build long-term. Something that looks like the way you just imagined it."
       />
     </div>

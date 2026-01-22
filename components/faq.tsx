@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import SubHeader from "./ui/sub-header";
 
 type FAQ = {
   question: string;
@@ -66,31 +67,29 @@ function FaqItem({ faq }: { faq: FAQ }) {
         <div className="px-5 pb-4 text-sm text-white/70">{faq.answer}</div>
       )}
     </div>
-  );  
+  );
 }
 interface Props {
-  heading:string;
-  subHeading?:string;
-  faqs:{
-    question:string;
-    answer:string;
-  }[]
+  heading: string;
+  subHeading?: string;
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
 }
 
-export default function FAQ({heading,subHeading,faqs}:Props) {
+export default function FAQ({ heading, subHeading, faqs }: Props) {
   return (
     <section className="relative overflow-hidden  py-20">
       <div className="relative mx-auto max-w-screen-2xl text-center md:w-[40%] px-4">
-        <h2 className="text-center text-2xl  font-bold text-white">
-          {subHeading}
-        </h2>
+        <SubHeader title={subHeading || ""} />
         <h1 className="text-center text-3xl md:text-6xl leading-[1.1] font-bold text-white">
           {heading}
         </h1>
       </div>
       <div className="mt-16 grid max-w-screen-2xl mx-auto w-[80%] gap-6 md:grid-cols-2">
         <div className="space-y-4">
-          {faqs.slice(0,3).map((faq, i) => (
+          {faqs.slice(0, 3).map((faq, i) => (
             <FaqItem key={i} faq={faq} />
           ))}
         </div>

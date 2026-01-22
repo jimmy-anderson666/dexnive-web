@@ -79,7 +79,7 @@ const Services = ({ services, heading, p, sHeading }: Props) => {
         className="absolute top-0 left-0 w-screen h-full z-10"
       />
 
-      <div className="md:w-[40%] max-w-screen-2xl mx-auto text-center relative z-20">
+      <div className="md:w-[45%] max-w-screen-2xl mx-auto text-center relative z-20">
         <SubHeader title={sHeading || ""} />
         <h1 className="text-3xl md:text-6xl font-bold leading-[1.1]">
           {heading}

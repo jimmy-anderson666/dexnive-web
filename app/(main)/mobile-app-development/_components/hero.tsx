@@ -11,7 +11,7 @@ const Hero = () => {
         className="absolute inset-0 z-20 object-cover"
       />
       <div className="max-w-screen-2xl mx-auto relative py-20 z-20">
-        <h1 className="text-3xl md:text-6xl md:w-[40%] w-full mx-auto text-center font-bold">
+        <h1 className="text-3xl md:text-6xl md:w-[45%] w-full mx-auto text-center font-bold">
           Finally, A Mobile App Development Company You Can Trust
         </h1>
         <p className="text-base md:w-[40%]  w-[95%] pt-4 mx-auto text-center">

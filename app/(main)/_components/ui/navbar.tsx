@@ -14,8 +14,8 @@ const Navbar = (props: Props) => {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/case-studies", label: "Case Study" },
-    { href: "/locations", label: "Locations" },
+    { href: "/about-us", label: "About Us" },
+    { href: "/careers", label: "Careers" },
   ];
 
   const servicesMenu = [

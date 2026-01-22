@@ -15,11 +15,11 @@ const CTA = () => {
             <p className="text-base md:w-[60%]  w-[95%] pt-4 mx-auto text-center">
               Whether you’re starting from scratch or improving an existing product, Dexnive helps you build, refine, and scale mobile apps that work properly and deliver real results..
             </p>
-            <Link href={"/contact-us"} className=" w-full pt-4 mx-auto text-center">
-                <div className="bg-linear-to-t from-[#53029B] to-[#840ECD] transition-all ease-linear hover:bg-[#4D2F8C] border border-[#4D2F8C] md:w-[20%] mt-8 mx-auto text-white py-2 px-4 rounded-md">
+            <div className="  w-full pt-4 mx-auto text-center">
+                <Link href={"/contact-us"} className="bg-linear-to-t from-[#53029B] to-[#840ECD] transition-all ease-linear hover:bg-[#4D2F8C] border border-[#4D2F8C]  mt-8 mx-auto text-white py-2 px-6 rounded-md">
                     Contact Us Today!
-                </div>
-            </Link>
+                </Link>
+            </div>
         </div>
         </div>
     </div>

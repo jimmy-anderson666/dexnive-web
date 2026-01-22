@@ -43,6 +43,7 @@ const Growth = () => {
   return (
     <div>
       <Services
+      
         heading="Everything Your App Needs"
         p="Dexnive isn’t just here to build apps; we partner with ambitious teams to create digital products that win users and scale with confidence. Our team of experts designs and develops mobile experiences that are built to perform from first idea to long-term growth."
         services={mobileAppServices}
