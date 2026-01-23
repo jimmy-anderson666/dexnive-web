@@ -53,7 +53,7 @@ const cardLayout = [
     icon: "/images/home/dex-apart/i4.png",
     deco: "/images/home/dex-apart/l3.png",
     decoClass:
-      "absolute bottom-0 left-1/2 -translate-x-1/2 w-full rounded-b-2xl"
+      "absolute bottom-0 left-1/2  -translate-x-1/2 w-full rounded-b-2xl"
   },
   {
     col: "col-span-4 row-span-6",
@@ -103,7 +103,7 @@ const ChooseUs = ({heading , subHeading , p , choose}: Props) => {
           ${layout.height}
           ${layout.bg}
           border-2 border-[#99999940]
-          rounded-2xl p-5 text-white overflow-hidden relative
+          rounded-2xl p-5 group text-white overflow-hidden relative
         `}
         variants={cardVariants}
         initial="hidden"
@@ -126,9 +126,9 @@ const ChooseUs = ({heading , subHeading , p , choose}: Props) => {
           <Image
             src={layout.deco}
             alt=""
-            width={150}
-            height={150}
-            className={layout.decoClass}
+            width={index > 2 ? 230 : 180}
+            height={180}
+            className={layout.decoClass + " group-hover:scale-110 transition"}
           />
         )}
       </motion.div>

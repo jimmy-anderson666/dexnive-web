@@ -1,5 +1,6 @@
 import FloatingLines from "@/components/FloatingLines";
 import HeroButton from "@/components/ui/hero-button";
+import SubHeader from "@/components/ui/sub-header";
 import Image from "next/image";
 const Hero = () => {
   return (
@@ -11,16 +12,18 @@ const Hero = () => {
         className="absolute inset-0 z-20 object-cover"
       />
       <div className="max-w-screen-2xl mx-auto relative py-20 z-20">
+        <SubHeader title="About Us" />
         <h1 className="text-3xl md:text-6xl md:w-[45%] w-full mx-auto text-center font-bold">
-          Finally, A Mobile App Development Company You Can Trust
+          Let’s Share How It All Started
         </h1>
-        <p className="text-base md:w-[40%]  w-[95%] pt-4 mx-auto text-center">
-          Being an expert mobile app development company, we work closely with you to design and build apps people actually love using while focusing on performance and growth.
+        <p className="text-base md:w-[60%]  w-[95%] pt-4 mx-auto text-center">
+           Dexnive a digital product and engineering the brand helping startups, enterprises and growing the teams that turn the ideas into the dependable, high performing solutions through the clarity and discipline We work with businesses which care about how the things are built, not just what is delivered. By combining smart thinking, structured execution and the strong foundations. Dexnive creates products that perform in real environments and support long term growth with confidence.  
         </p>
         <div className="md:w-[50%] w-full pt-4 mx-auto text-center">
           <HeroButton title=" Discuss Your Idea Now" />
         </div>
       </div>
+      <Image src={"/images/about-us/hero.png"} alt="hero" width={500} height={500} className="md:w-[50%] w-[95%] relative -top-40 mx-auto object-center" />
       {/* <div className="relative">
         <Image
           src={"/images/web-app/hero-bg2.webp"}
@@ -37,27 +40,7 @@ const Hero = () => {
           height={500}
         />
       </div> */}
-          <Image
-          src={"/images/mobile-app/hero.png"}
-          className=" absolute top-[80%] left-1/2 z-30 translate-x-[-50%] object-center"
-          alt="hero"
-          width={900}
-          height={900}
-        />
-      <div className="relative -top-28  z-0" >
-  <FloatingLines
-      enabledWaves={["middle" , "top" ,  ]}
-    topWavePosition={{x:0,y:0,rotate:0}}
-    // bottomWavePosition={{x:0,y:-1000,rotate:0}}
-    lineCount={5}
-    lineDistance={5}
-    bendRadius={5}
-    bendStrength={-0.5}
-    interactive
-    parallax={false}
-    mixBlendMode="normal"
-  />
-  </div>
+       
     </div>
   )
 }
