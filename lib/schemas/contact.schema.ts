@@ -6,8 +6,8 @@ export const contactSchema = z.object({
   phone: z.string().min(10, "Phone number is required"),
   services: z.string().min(1, "Please specify services"),
   details: z.string().min(10, "Please describe your idea"),
-  terms: z.literal(true, {
-    errorMap: () => ({ message: "You must accept the terms" }),
+   terms: z.boolean().refine((val) => val === true, {
+    message: "You must accept the terms",
   }),
 });
 
