@@ -28,7 +28,7 @@ const ContactUs = () => {
         <form className="w-[50%] mx-auto space-y-2 mt-24">
           <div className="flex gap-4">
             <div className="w-full space-y-2">
-              <label className="text-sm font-medium text-white">Name</label>
+              <label className="text-sm font-medium text-white">Who’s Behind This Idea?</label>
               <input
                 type="text"
                 placeholder="Name"
@@ -37,7 +37,7 @@ const ContactUs = () => {
             </div>
 
             <div className="w-full space-y-2">
-              <label className="text-sm font-medium text-white">Email</label>
+              <label className="text-sm font-medium text-white">Where Can We Reach You?</label>
               <input
                 type="email"
                 placeholder="Email"
@@ -48,28 +48,28 @@ const ContactUs = () => {
           <div className="flex gap-4">
             <div className="w-full space-y-2">
               <label className="text-sm font-medium text-white">
-                Project Type
+                Where Can We Connect With You?
               </label>
               <input
-                type="text"
-                placeholder="Project Type"
+                type="phone"
+                placeholder="Number"
                 className="w-full rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-purple-500"
               />
             </div>
 
             <div className="w-full space-y-2">
-              <label className="text-sm font-medium text-white">Budget</label>
+              <label className="text-sm font-medium text-white">What Are You Looking For?</label>
               <input
                 type="text"
-                placeholder="Budget"
+                placeholder="Services"
                 className="w-full rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-purple-500"
               />
             </div>
           </div>
           <div className="space-y-2">
-            <label className="text-sm font-medium text-white">Message</label>
+            <label className="text-sm font-medium text-white">Tell Us About Your Idea</label>
             <textarea
-              placeholder="Message"
+              placeholder="Project Details"
               rows={3}
               className="w-full rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-purple-500"
             />
