@@ -3,7 +3,7 @@ import HeroButton from "@/components/ui/hero-button";
 import Image from "next/image";
 const Hero = () => {
   return (
-      <div className="-mb-40">
+      <div className="md:-mb-40">
       <Image
         src="/images/blue-hue.png"
         alt="bg"
@@ -44,7 +44,7 @@ const Hero = () => {
           width={900}
           height={900}
         />
-      <div className="relative -top-28  z-0" >
+      <div className="relative md:-top-28  z-0" >
   <FloatingLines
       enabledWaves={["middle" , "top" ,  ]}
     topWavePosition={{x:0,y:0,rotate:0}}

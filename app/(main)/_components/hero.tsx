@@ -14,7 +14,7 @@ const Hero = () => {
         alt="bg"
         width={1500}
         height={1500}
-        className="absolute z-20 bottom-5 2xl:bottom-10 w-screen  left-0  object-cover"
+        className="absolute z-20 bottom-5 md:block hidden 2xl:bottom-10 w-screen  left-0  object-cover"
       />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -45,8 +45,17 @@ const Hero = () => {
           <HeroButton title="Explore the Possibilities." />
         </div>
       </div>
-      <div className="-mt-28">
+      <div className="-mt-28 md:block hidden  ">
         <HeroSectionDesign />
+      </div>
+      <div className="md:hidden mt-5 block">
+        <Image
+          src="/images/home/mob.png"
+          alt="hero"
+          width={1700}
+          height={1700}
+          className="w-screen h-full object-cover"
+        />
       </div>
     </div>
   );

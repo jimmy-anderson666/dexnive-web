@@ -249,6 +249,7 @@ reset();
             <Image
               src="/images/home/cta/mind.png"
               alt="cta"
+              className="md:block hidden"
               width={760}
               height={820}
             />

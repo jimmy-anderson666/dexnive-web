@@ -14,7 +14,7 @@ const Careers = () => {
                 height={1500}
                 className="absolute -top-52 left-0 w-full  object-cover"
               />
-        <div className="flex items-center relative z-20 justify-between w-[80%] mx-auto" >
+        <div className="flex md:flex-row flex-col items-center relative z-20 justify-between w-[80%] mx-auto" >
             <div className="md:w-[50%] w-full flex gap-4 flex-col items-start"> 
                 <div>
                 <SubHeader title="Careers" />

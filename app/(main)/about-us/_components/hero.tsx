@@ -23,7 +23,7 @@ const Hero = () => {
           <HeroButton title=" Discuss Your Idea Now" />
         </div>
       </div>
-      <Image src={"/images/about-us/hero.png"} alt="hero" width={500} height={500} className="md:w-[50%] w-[95%] relative -top-40 mx-auto object-center" />
+      <Image src={"/images/about-us/hero.png"} alt="hero" width={500} height={500} className="md:w-[50%] w-[95%] mt-20 md:mt-0 relative -top-40 mx-auto object-center" />
       {/* <div className="relative">
         <Image
           src={"/images/web-app/hero-bg2.webp"}

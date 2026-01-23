@@ -263,7 +263,7 @@ export default function CallToAction({
               alt="cta"
               width={760}
               height={820}
-              className="rounded-lg"
+              className="md:block hidden rounded-lg"
             />
           </div>
         </div>

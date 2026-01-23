@@ -9,7 +9,7 @@ const CTA = () => {
         alt="cta"
         width={700}
         height={700}
-        className="absolute -z-10 -top-[45%] left-1/2 translate-x-[-50%]"
+        className="absolute md:block hidden -z-10 -top-[45%] left-1/2 translate-x-[-50%]"
       />
       <div className="max-w-screen-2xl mx-auto w-[60%]">
         <h1 className="text-3xl md:text-6xl md:w-[50%] w-full mx-auto text-center font-bold">

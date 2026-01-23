@@ -3,7 +3,7 @@ import HeroButton from "@/components/ui/hero-button";
 import Image from "next/image";
 const Hero = () => {
   return (
-    <div className="">
+    <div className="mb-32 md:mb-0">
       <Image
         src="/images/blue-hue.png"
         alt="bg"
@@ -40,10 +40,10 @@ const Hero = () => {
           height={500}
         />
       </div> */}
-      <div className="relative -top-28  z-0">
+      <div className="relative md:-top-28  z-0">
         <Image
           src={"/images/custom-app/hero2.png"}
-          className=" absolute top-28 left-1/2 z-30 translate-x-[-50%] object-center"
+          className=" absolute md:top-28 top-0 left-1/2 z-30 translate-x-[-50%] object-center"
           alt="hero"
           width={900}
           height={900}
