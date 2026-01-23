@@ -1,9 +1,13 @@
 import React from "react";
 import AboutUs from "./_components/about-us";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Dexnive's Story",
+  description:
+    "Dexnive's Story",
+};
 
-type Props = {};
-
-const page = (props: Props) => {
+const page = () => {
   return (
     <div>
       <AboutUs />
