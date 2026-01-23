@@ -25,7 +25,7 @@ const Careers = () => {
                     <Link href={"/careers"} className="px-8 py-2 rounded-full border border-[#7C1FFF] text-white hover:bg-[#7C1FFF] transition" >See Our Open Positions</Link>
                 </div>
                   </div>
-            <Image src={"/images/about-us/env.png"} alt="envelop" width={400} height={400} />
+            <Image src={"/images/about-us/env.png"} alt="envelop" width={500} height={500} />
         </div>
     </div>
   )
