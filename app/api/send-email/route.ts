@@ -1,4 +1,4 @@
-import { buildHtml, extractField, extractMultilineField } from "@/app/lib/helper";
+import { buildHtml, extractField, extractMultilineField } from "@/lib/helper";
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
 
         const info = await transporter.sendMail({
             from: `"Dexnive Leads" <${process.env.SMTP_USER}>`,
-            to: "huzaifa.tanveer@dexnive.com",
+            to: process.env.NEXT_PUBLIC_EMAIL_TO,
             subject: normalized.subject,
             html: htmlTemplate,
             text: `

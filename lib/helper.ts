@@ -1,17 +1,17 @@
 function extractField(body: string | undefined, label: string) {
-    if (!body) return "N/A";
-    const match = body.match(new RegExp(`${label}:\\s*(.*)`));
-    return match?.[1] || "N/A";
+  if (!body) return "N/A";
+  const match = body.match(new RegExp(`${label}:\\s*(.*)`));
+  return match?.[1] || "N/A";
 }
 
 function extractMultilineField(body: string | undefined, label: string) {
-    if (!body) return "No details provided";
-    const index = body.indexOf(label);
-    return index !== -1 ? body.slice(index + label.length).trim() : "No details provided";
+  if (!body) return "No details provided";
+  const index = body.indexOf(label);
+  return index !== -1 ? body.slice(index + label.length).trim() : "No details provided";
 }
 
 function buildHtml(message: any) {
-    return `
+  return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +28,7 @@ function buildHtml(message: any) {
           <!-- Logo + Header -->
           <tr>
             <td style="background-color:#490077; padding:24px; text-align:center;">
-              <img src="cid:logo" alt="Dexnive" width="120" style="display:block; margin:0 auto 12px;"/>
+              <img src="/images/logo.png" alt="Dexnive" width="120" style="display:block; margin:0 auto 12px;"/>
               <h1 style="color:#ffffff; font-size:24px; margin:0;">🚀 New Lead Received</h1>
             </td>
           </tr>

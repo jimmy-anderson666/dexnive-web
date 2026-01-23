@@ -29,7 +29,7 @@ const executionChoose = [
   {
     title: "200+ Skilled Technology Experts",
     description:
-      "You don’t need to spend time hiring and training the newbies. You’d get to work with the experienced technology experts who already know how to adapt quickly and work. Whether you need extra hands or full ownership, the right people are ready to step in when you need them.",
+      "You don’t need to spend time hiring and training the newbies. You’d get to work with the experienced technology experts who already know how to adapt quickly and work. ",
   },
 ];
 

@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema, ContactFormValues } from "@/lib/schemas/contact.schema";
 import Image from "next/image";
@@ -15,11 +15,16 @@ import { cn } from "@/lib/utils";
 
 const ContactUs = () => {
   const {
+    control,
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
+      defaultValues: {
+      services: "",   
+    }
   });
 
   const onSubmit = async (data: ContactFormValues) => {
@@ -52,7 +57,7 @@ ${data.details}
         throw new Error(result.message || "Something went wrong");
       }
 
-      console.log("Email sent:", result);
+   reset();
       alert("Your message has been sent successfully 🚀");
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -77,7 +82,7 @@ ${data.details}
         className="absolute z-10 top-0 w-screen  left-0  object-cover"
       /> */}
       <div className="max-w-screen-2xl mx-auto relative py-20 z-20">
-        <h1 className="text-3xl md:text-6xl md:w-[40%] w-full mx-auto text-center font-bold">
+        <h1 className="text-3xl md:text-6xl leading-[1.2] md:w-[40%] w-full mx-auto text-center font-bold">
           Wondering if Dexnive is the right fit?
         </h1>
         <p className="text-base md:w-[40%]  w-[95%] pt-4 mx-auto text-center">
@@ -86,18 +91,18 @@ ${data.details}
         </p>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-[50%] mx-auto  space-y-2 mt-24"
+          className="w-[50%] mx-auto  space-y-6 mt-24"
         >
           {/* Name + Email */}
           <div className="flex gap-4">
             <div className="w-full space-y-1">
-              <label className="text-sm font-medium text-white">
+              <label className="text-sm  font-medium text-white">
                 Who’s Behind This Idea?
               </label>
               <input
                 {...register("name")}
                 placeholder="Name"
-                className="w-full outline-none rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-1 focus:ring-purple-500"
+                className="w-full mt-1 outline-none rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-1 focus:ring-purple-500"
               />
               {errors.name && (
                 <p className="text-xs text-red-400">{errors.name.message}</p>
@@ -112,7 +117,7 @@ ${data.details}
                 {...register("email")}
                 type="text"
                 placeholder="Email"
-                className="w-full outline-none rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-1 focus:ring-purple-500"
+                className="w-full mt-1 outline-none rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-1 focus:ring-purple-500"
               />
               {errors.email && (
                 <p className="text-xs text-red-400">{errors.email.message}</p>
@@ -129,7 +134,7 @@ ${data.details}
               <input
                 {...register("phone")}
                 placeholder="Number"
-                className="w-full   outline-none rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-1 focus:ring-purple-500"
+                className="w-full mt-1 outline-none rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-1 focus:ring-purple-500"
               />
               {errors.phone && (
                 <p className="text-xs text-red-400">{errors.phone.message}</p>
@@ -141,24 +146,37 @@ ${data.details}
                 What Are You Looking For?
               </label>
 
-              <Select {...register("services")}>
-                <SelectTrigger className="w-full rounded-lg outline-none border border-[#840ECD] bg-white/10 py-5.5 text-white placeholder:text-white/40  focus:ring-purple-500">
-                  <SelectValue placeholder="Select a service" />
-                </SelectTrigger>
-                <SelectContent className="bg-black text-white border-[#840ECD] z-30 top-12">
-                  <SelectGroup>
-                    <SelectItem value="Web Development">
-                      Web App Development
-                    </SelectItem>
-                    <SelectItem value="App Development">
-                      Mobile App Development
-                    </SelectItem>
-                    <SelectItem value="Custom Software Development">
-                      Custom Software Development
-                    </SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
+              <Controller
+                name="services"
+                
+                control={control}
+                render={({ field }) => (
+                  <Select
+                    onValueChange={field.onChange}
+                    value={field.value || ""} // ensure default is string, not undefined
+                  >
+                    <SelectTrigger className="w-full  mt-1 rounded-lg outline-none border border-[#840ECD] bg-white/10 py-5.5 text-white placeholder:text-white/40 focus:ring-purple-500">
+                      <SelectValue
+                        defaultValue={""}
+                        placeholder="Select a service"
+                      />
+                    </SelectTrigger>
+                    <SelectContent className="bg-black text-white border-[#840ECD] z-30 top-12">
+                      <SelectGroup>
+                        <SelectItem value="Web App Development">
+                          Web App Development
+                        </SelectItem>
+                        <SelectItem value="Mobile App Development">
+                          Mobile App Development
+                        </SelectItem>
+                        <SelectItem value="Custom Software Development">
+                          Custom Software Development
+                        </SelectItem>
+                      </SelectGroup>
+                    </SelectContent>
+                  </Select>
+                )}
+              />
 
               {errors.services && (
                 <p className="text-xs text-red-400">
@@ -177,7 +195,7 @@ ${data.details}
               {...register("details")}
               rows={3}
               placeholder="Project Details"
-              className="w-full outline-none rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-1 focus:ring-purple-500"
+              className="w-full outline-none mt-1 rounded-lg border border-[#840ECD] bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:ring-1 focus:ring-purple-500"
             />
             {errors.details && (
               <p className="text-xs text-red-400">{errors.details.message}</p>
@@ -200,11 +218,10 @@ ${data.details}
               )}
             >
               {" "}
-              By checking this box, I agree to receive SMS from LaunchBox Global
-              at the phone number provided. Msg & data rates may apply. Msg
-              frequency varies. For help, reply HELP or email us at
-              hello@launchboxglobal.com. You can opt out at any time by replying
-              STOP. Privacy & Policy & Terms and Conditions.{" "}
+              By checking this box, I agree to receive SMS from Dexnive at the phone number provided. Msg & data rates may
+                  apply. Msg frequency varies. For help, reply HELP or email us
+                  at hello@dexnive.com. You can opt out at any time by
+                    replying STOP. Privacy & Policy & Terms & Conditions.{" "}
             </label>{" "}
           </div>
 
@@ -212,9 +229,9 @@ ${data.details}
           <button
             disabled={isSubmitting}
             type="submit"
-            className="flex mx-auto px-8 items-center justify-center rounded-full bg-linear-to-r from-[#840ECD] to-[#53029B] py-3 text-sm font-medium text-white disabled:opacity-60"
+            className="cursor-pointer flex mx-auto mt-16 px-8 items-center justify-center rounded-full bg-linear-to-r from-[#840ECD] to-[#53029B] py-3 text-lg font-medium text-white disabled:opacity-60"
           >
-            {isSubmitting ? "Submitting..." : "Explore the Possibilities"}
+            {isSubmitting ? "Submitting..." : "Let's Get Started"}
           </button>
         </form>
       </div>

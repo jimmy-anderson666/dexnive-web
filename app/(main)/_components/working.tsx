@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import Development from "@/components/development";
@@ -73,7 +73,11 @@ const cardVariants: Variants = {
 const Working = () => {
   return (
     <div>
-      <Development process={processSteps} header="What Working With Dexnive Looks Like" p="We don’t overthink how we work together or following an official workflow because each project requires different workflows so working with us doesn’t mean learning a complicated process or fitting into someone else’s system. Things stay flexible, communication stays open. So you’re never left guessing what’s happening." />
+      <Development
+        process={processSteps}
+        header="What Working With Dexnive Looks Like"
+        p="We don’t overthink how we work together or following an official workflow because each project requires different workflows so working with us doesn’t mean learning a complicated process or fitting into someone else’s system. Things stay flexible, communication stays open. So you’re never left guessing what’s happening."
+      />
     </div>
   );
 };

@@ -15,11 +15,11 @@ const CTA = () => {
             <p className="text-base md:w-[60%]  w-[95%] pt-4 mx-auto text-center">
               If clarity, accountability, and steady execution matter to you, let’s talk. We’ll walk through your idea and define the next steps together.
             </p>
-            <Link href={"/contact-us"} className=" w-full pt-4 mx-auto text-center">
-                <div className="bg-linear-to-t from-[#53029B] to-[#840ECD] transition-all ease-linear hover:bg-[#4D2F8C] border border-[#4D2F8C] md:w-[20%] mt-8 mx-auto text-white py-2 px-4 rounded-md">
+            <div className="mt-8 w-full pt-4 mx-auto text-center">
+                <Link href={"/contact-us"} className="bg-linear-to-t from-[#53029B] to-[#840ECD] transition-all ease-linear hover:bg-[#4D2F8C] border border-[#4D2F8C] md:w-[20%] mt-8 mx-auto text-white py-2 px-4 rounded-md">
                      Start the Conversation
-                </div>
-            </Link>
+                </Link>
+            </div>
         </div>
         </div>
     </div>

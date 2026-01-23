@@ -56,6 +56,7 @@ const CustomSoftware = () => {
         header="Your Idea Deserves the Perfect Execution Now!"
         p=" If generic tools are holding you back, let’s talk through your requirements and challenges and define a software solution built to support your business over time."
         btnText="Get your project started"
+        service="Custom Software"
       />
     </div>
   );

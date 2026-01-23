@@ -14,12 +14,12 @@ export const executionChoose = [
   {
     title: "Software That’s Ready to Grow",
     description:
-      "The custom software development solutions are designed with growth in mind. From architecture to integrations, every decision is made to support scalability, performance, and future expansion, not just short-term launch goals."
+      "The custom software development solutions are designed with growth in mind. From architecture to integrations, every decision is made to support scalability, performance, and future expansion."
   },
   {
     title: "Work Directly With the People Building Your Product",
     description:
-      "You’re not just dealing with some names; you’re simply going to work directly with a dedicated development team. A team that’s fully invested in your product. And the collaboration leads to clearer communication and real accountability, which is why clients trust Dexnive for long-term partnerships."
+      "You’re not just dealing with some names; you’re simply going to work directly with a dedicated development team. A team that’s fully invested in your product. ."
   },
   {
     title: "200+ Skilled Technology Experts",

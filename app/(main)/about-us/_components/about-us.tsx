@@ -51,7 +51,7 @@ const AboutUs = () => {
         choose={valuePropositions}
       />
       <Careers />
-      <CallToAction btnText="Explore the Possibilities" header="Wondering if Dexnive is the right fit?" p="Talk to our team today and make your decision. Because the best partnerships start with the right questions, not rushed decisions." imgPath="/images/about-us/cta.png" />
+      <CallToAction btnText="Explore the Possibilities" header="Wondering if Dexnive is the right fit?" p="Talk to our team today and make your decision. Because the best partnerships start with the right questions, not rushed decisions." imgPath="/images/about-us/cta.png"  />
     </div>
   );
 };

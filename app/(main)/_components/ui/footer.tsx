@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { TextAnimate } from "@/components/ui/text-animate";
+import Link from "next/link";
 
 const text = "DEXNIVE";
 
@@ -45,16 +46,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="">
             <p className="text-2xl font-extralight text-nowrap">
-              Ready to{" "}
-              <span className="text-white font-bold">revolutionise</span>
-              <br />
-              your business communications with
-              <br />
-              <span className="font-bold text-white">unrivalled speed?</span>
+              Something you’ve been <br />{" "}
+              <span className="font-bold">thinking about building?</span>
             </p>
 
-            <button className="mt-6 tracking-widest rounded-full text-xs px-12 p-4 bg-linear-to-b from-[#840ECD] to-[#53029B]">
-              GET IN TOUCH
+            <button className="mt-6 capitalize tracking-widest rounded-full text-sm px-12 p-4 bg-linear-to-b from-[#840ECD] to-[#53029B]">
+              <Link href="/contact-us" className="w-full">Discuss your idea</Link>
             </button>
 
             <p className="mt-8 text-xs ">
@@ -68,7 +65,7 @@ const Footer = () => {
             <p>+92 21 345-222-44</p>
             <p>+92 21 345-333-44</p>
 
-            <p className="mt-4">info@dexnive.co.uk</p>
+            <p className="mt-4">hello@dexnive.com</p>
 
             <p className="mt-6 text-xs uppercase tracking-wider ">Address</p>
             <p className="mt-2">
@@ -88,19 +85,23 @@ const Footer = () => {
             </p>
             <ul className="space-y-2">
               <li className="hover:text-white transition cursor-pointer">
-                Mobile App Development
+                <Link href="/mobile-app-development">
+                  Mobile App Development
+                </Link>
               </li>
               <li className="hover:text-white transition cursor-pointer">
-                Web App Development
+                <Link href="/web-app-development">Web App Development</Link>
               </li>
               <li className="hover:text-white transition cursor-pointer">
-                Custom Software Development
+                <Link href="/custom-software-development">
+                  Custom Software Development
+                </Link>
               </li>
               <li className="hover:text-white transition cursor-pointer">
-                About Us
+                <Link href="/about-us">About Us</Link>
               </li>
               <li className="hover:text-white transition cursor-pointer">
-                Privacy Policy
+                <Link href="/">Privacy Policy</Link>
               </li>
             </ul>
           </div>

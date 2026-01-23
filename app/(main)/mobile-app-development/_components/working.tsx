@@ -4,7 +4,7 @@ export const executionChoose = [
   {
     title: "Execution-First Mindset",
     description:
-      "We don’t just go with promises; we start with execution. Every mobile app project is planned carefully and delivered consistently so your idea becomes a real, usable product, not just a concept.",
+      "We don’t just go with promises; we start with execution. Every mobile app project is planned carefully and delivered consistently so your idea becomes a real, not just a concept.",
   },
   {
     title: "Clear Processes, No Guesswork",

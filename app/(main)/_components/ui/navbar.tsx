@@ -20,14 +20,14 @@ const Navbar = (props: Props) => {
 
   const servicesMenu = [
     {
-      href: "/web-app-development",
-      label: "Web Development",
-      description: "Custom web solutions tailored to your needs",
+      href: "/mobile-app-development",
+      label: "Mobile App Development",
+      description: "Native and cross-platform mobile applications",
     },
     {
-      href: "/mobile-app-development",
-      label: "App Development",
-      description: "Native and cross-platform mobile applications",
+      href: "/web-app-development",
+      label: "Web App Development",
+      description: "Custom web solutions tailored to your needs",
     },
     {
       href: "/custom-software-development",
@@ -58,7 +58,7 @@ const Navbar = (props: Props) => {
             key={link.href}
             href={link.href}
             className={`${
-              pathname === link.href ? "text-primary" : "text-white"
+              pathname === link.href ? "bg-white/90 text-primary rounded-full px-2 -ml-3" : "text-white"
             }`}
           >
             {link.label}
@@ -78,7 +78,7 @@ const Navbar = (props: Props) => {
 
   {/* Dropdown */}
   <div
-    className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[400px]
+    className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-full
       opacity-0 scale-95 pointer-events-none
       transition-all duration-200
       group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto"
@@ -86,7 +86,7 @@ const Navbar = (props: Props) => {
     {/* HOVER BRIDGE */}
     <div className="absolute -top-3 left-0 right-0 h-3" />
 
-    <div className="p-3 space-y-1 bg-black border border-white/10 rounded-2xl">
+    <div className="p-3 space-y-1 bg-black  border w-[300px] border-white/10 rounded-2xl">
       {servicesMenu.map((service) => (
         <Link
           key={service.href}
@@ -112,7 +112,7 @@ const Navbar = (props: Props) => {
             key={link.href}
             href={link.href}
             className={`${
-              pathname === link.href ? "text-primary" : "text-white"
+              pathname === link.href ? "bg-white/90 text-primary rounded-full px-2" : "text-white"
             }`}
           >
             {link.label}

@@ -45,23 +45,28 @@ export const webAppFAQs = [
   },
 ];
 
-
 const WebAppDevelopment = () => {
   return (
     <div>
       <Hero />
       <Growth />
       <Working />
-      <CTA/>
-   <Tech/>
+      <CTA />
+      <Tech />
       <WayOfDevelopment />
       <Testimonials />
-      <FAQ faqs={webAppFAQs}  heading="Everything You Need to Know!"
-      subHeading="Frequently Asked Questions" />
-      <CallToAction imgPath="/images/web-app/call.png" 
-      header="Let’s Start Working on Your Idea"
-      p="You’ve seen how we plan and build.  Now let’s discuss the idea and understand what exactly your vision is and figure out the best way to move forward."
-      btnText="Talk to the experts" />
+      <FAQ
+        faqs={webAppFAQs}
+        heading="Everything You Need to Know!"
+        subHeading="Frequently Asked Questions"
+      />
+      <CallToAction
+        imgPath="/images/web-app/call.png"
+        header="Let’s Start Working on Your Idea"
+        p="You’ve seen how we plan and build.  Now let’s discuss the idea and understand what exactly your vision is and figure out the best way to move forward."
+        btnText="Talk to the experts"
+        service="Web App Development"
+      />
     </div>
   );
 };

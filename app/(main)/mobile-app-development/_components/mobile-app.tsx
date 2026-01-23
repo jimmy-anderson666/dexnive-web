@@ -54,7 +54,8 @@ const MobileApp = () => {
       <CallToAction imgPath="/images/mobile-app/call.png" 
       header="Let’s Start With a Question"
       p="If something here resonates, the next step doesn’t have to be a commitment. It can simply be a conversation. No rehearsed pitch, no pressure to proceed. Just a thoughtful exchange to see what makes sense next."
-      btnText="Discuss the Next Step" />
+      btnText="Discuss the Next Step"
+      service="Mobile App Development" />
     </div>
   );
 };

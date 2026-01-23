@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const CTA = () => {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-[60vh]">
       <Image
         src={"/images/custom-app/cta.png"}
         alt="cta"
         width={700}
         height={700}
-        className="absolute -z-10 -top-[35%] left-1/2 translate-x-[-50%]"
+        className="absolute -z-10 -top-[45%] left-1/2 translate-x-[-50%]"
       />
       <div className="max-w-screen-2xl mx-auto w-[60%]">
         <h1 className="text-3xl md:text-6xl md:w-[50%] w-full mx-auto text-center font-bold">

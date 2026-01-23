@@ -4,7 +4,7 @@ import SubHeader from "@/components/ui/sub-header";
 import Image from "next/image";
 const Hero = () => {
   return (
-      <div className="">
+      <div className="-mb-40">
       <Image
         src="/images/blue-hue.png"
         alt="bg"

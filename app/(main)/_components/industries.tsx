@@ -69,7 +69,7 @@ const Industries = () => {
                 alt={industry.title}
                 width={60}
                 height={60}
-                className="w-12 mx-auto group-hover:scale-110 transition-all ease-linear"
+                className="w-12 mb-4 mx-auto group-hover:scale-110 transition-all ease-linear"
               />
               <h3 className="text-lg mb-4 font-bold">{industry.title}</h3>
               <p className="text-sm font-medium">{industry.description}</p>

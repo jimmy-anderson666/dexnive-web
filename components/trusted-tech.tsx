@@ -19,7 +19,7 @@ interface Props {
 
 const TrustedTech = ({techStack , heading , p}:Props) => {
   return (
-    <div className="py-28 relative">
+    <div className="py-40 relative">
     <Image
         src="/images/home/bg.png"
         alt=""

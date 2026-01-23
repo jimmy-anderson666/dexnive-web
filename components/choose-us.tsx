@@ -81,13 +81,13 @@ const ChooseUs = ({heading , subHeading , p , choose}: Props) => {
         height={1500}
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
-      <div className="max-w-screen-2xl mx-auto md:w-[40%] text-center">
+      <div className="max-w-screen-2xl relative z-20 mx-auto md:w-[40%] text-center">
         <SubHeader title={subHeading || ""} />
         <h1 className="text-3xl md:text-6xl leading-[1.1] font-bold text-center">
          {heading}
         </h1>
       </div>
-        <p className="text-lg   md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
+        <p className="text-lg  relative z-20  md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
          {p}
         </p>
       <div className="min-h-screen flex md:w-[60%] mx-auto items-center justify-center px-6 py-20">

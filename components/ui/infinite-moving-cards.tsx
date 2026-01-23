@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -104,12 +104,8 @@ export const InfiniteMovingCards = ({
                   height={50}
                 />
                 <span className="flex flex-col gap-0">
-                  <span className="text-sm  font-normal ">
-                    {item.name}
-                  </span>
-                  <span className="text-sm  font-normal ">
-                    {item.title}
-                  </span>
+                  <span className="text-sm  font-normal ">{item.name}</span>
+                  <span className="text-sm  font-normal ">{item.title}</span>
                 </span>
               </div>
               <span className="relative z-20 text-sm leading-[1.6] font-normal text-gray-100">

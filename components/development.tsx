@@ -1,10 +1,8 @@
 "use client";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import SubHeader from "./ui/sub-header";
-
-
 
 const containerVariants = {
   hidden: {},
@@ -21,18 +19,17 @@ const cardVariants: Variants = {
 };
 
 interface Props {
-    process:{
-        imagePath:string,
-        title:string,
-        description:string,
-    }[
-    ]
-    header:string
-    p:string
-    subHeader?:string
+  process: {
+    imagePath: string;
+    title: string;
+    description: string;
+  }[];
+  header: string;
+  p: string;
+  subHeader?: string;
 }
 
-const Development = ({process , header , p , subHeader} : Props) => {
+const Development = ({ process, header, p, subHeader }: Props) => {
   return (
     <div className="relative py-10">
       <Image
@@ -45,12 +42,12 @@ const Development = ({process , header , p , subHeader} : Props) => {
       <div className="max-w-screen-2xl mx-auto md:w-[40%] text-center">
         <SubHeader title={subHeader || ""} />
         <h1 className="text-3xl md:text-6xl leading-[1.1] font-bold text-center">
-         {header}
+          {header}
         </h1>
       </div>
-        <p className="text-lg   md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
+      <p className="text-lg   md:w-[60%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
         {p}
-        </p>
+      </p>
       <div className="max-w-screen-2xl mx-auto w-[80%] py-8">
         {process.map((step, index) => (
           <motion.div
@@ -67,7 +64,9 @@ const Development = ({process , header , p , subHeader} : Props) => {
             <div className="md:w-[40%]">
               <span>Step {index + 1}</span>
               <h3 className="font-semibold my-2 text-5xl">{step.title}</h3>
-              <p className="text-sm text-white/80 md:pr-12">{step.description}</p>
+              <p className="text-sm text-white/80 md:pr-12">
+                {step.description}
+              </p>
             </div>
             <Image
               src={step.imagePath}
