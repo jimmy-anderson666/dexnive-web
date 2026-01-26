@@ -45,10 +45,10 @@ const Hero = () => {
           <HeroButton title="Explore the Possibilities." />
         </div>
       </div>
-      <div className="-mt-28 md:block hidden  ">
+      <div className="-mt-28 xl:block hidden  ">
         <HeroSectionDesign />
       </div>
-      <div className="md:hidden mt-5 block">
+      <div className="xl:hidden mt-5 block">
         <Image
           src="/images/home/mob.png"
           alt="hero"

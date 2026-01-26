@@ -17,7 +17,7 @@ const Story = () => {
           The Thinking Behind What We Create
         </h1>
       </div>
-      <p className="text-xl md:text-3xl text-[#D0C8C8] leading-[1.4] relative z-20 w-[95%]  md:w-[90%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
+      <p className="text-lg md:text-3xl text-[#D0C8C8] leading-[1.4] relative z-20 w-[95%]  md:w-[90%] mx-auto max-w-screen-2xl text-center font-medium pt-4">
         <span className="bg-[#53029B] pl-2 mr-2" >Dexnive{` `}</span>
         {`was created with one clear belief: successful digital products
         are not always defined by the ideas alone but also by how well those

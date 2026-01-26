@@ -50,8 +50,8 @@ const Footer = () => {
               <span className="font-bold">thinking about building?</span>
             </p>
 
-            <button className="mt-6 capitalize tracking-widest rounded-full text-sm px-12 p-4 bg-linear-to-b from-[#840ECD] to-[#53029B]">
-              <Link href="/contact-us" className="w-full">Discuss your idea</Link>
+            <button className="mt-6 capitalize tracking-widest rounded-full text-sm  bg-linear-to-b from-[#840ECD] to-[#53029B]">
+              <Link href="/contact-us" className="w-full px-12 p-4 block">Discuss your idea</Link>
             </button>
 
             <p className="mt-8 text-xs ">

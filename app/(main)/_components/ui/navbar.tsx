@@ -4,7 +4,12 @@ import Logo from "../logo";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
 
 type Props = {};
 
@@ -72,9 +77,16 @@ const Navbar = (props: Props) => {
           ))}
 
           {/* Desktop Services Dropdown */}
-          <div className="relative" ref={menuRef}>
+          <div
+            className="relative"
+            ref={menuRef}
+            onMouseEnter={() => setIsServicesOpen(true)}
+            onMouseLeave={() => setIsServicesOpen(false)}
+          >
+            {/* Hover buffer */}
+            <div className="absolute -bottom-4 left-0 w-full h-4" />
+
             <button
-              onClick={() => setIsServicesOpen(!isServicesOpen)}
               className={`flex items-center gap-1 ${
                 pathname.startsWith("/services") ? "text-primary" : "text-white"
               } transition-colors`}
@@ -88,7 +100,7 @@ const Navbar = (props: Props) => {
             </button>
 
             {isServicesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[300px] bg-black border border-white/10 rounded-2xl p-3 space-y-1">
+              <div className="absolute top-full left-1/2 -translate-x-[13%] mt-2 w-[300px] bg-black border border-white/10 rounded-2xl p-3 space-y-1">
                 {servicesMenu.map((service) => (
                   <Link
                     key={service.href}
@@ -99,8 +111,12 @@ const Navbar = (props: Props) => {
                         : "text-white"
                     }`}
                   >
-                    <div className="text-sm font-medium mb-1">{service.label}</div>
-                    <p className="text-xs text-[#9B96B0]">{service.description}</p>
+                    <div className="text-sm font-medium mb-1">
+                      {service.label}
+                    </div>
+                    <p className="text-xs text-[#9B96B0]">
+                      {service.description}
+                    </p>
                   </Link>
                 ))}
               </div>
@@ -123,7 +139,13 @@ const Navbar = (props: Props) => {
         </nav>
 
         {/* Desktop Contact Button */}
-     <Link href={"/contact-us"} className="bg-linear-to-l md:block hidden transition-all ease-linear hover:shadow-[0px_0px_30px_0px_rgba(132,14,205,1)] bg-[#5E05A6] text-sm shadow-[0px_0px_30px_0px_rgba(132,14,205,0.25)] from-[#FFFFFF]/20 to-[#FFFFFF73]/10 text-white border-2 border-[#840ECD] px-4 py-1 rounded-full" > Contact Us </Link>
+        <Link
+          href={"/contact-us"}
+          className="bg-linear-to-l md:block hidden transition-all ease-linear hover:shadow-[0px_0px_30px_0px_rgba(132,14,205,1)] bg-[#5E05A6] text-sm shadow-[0px_0px_30px_0px_rgba(132,14,205,0.25)] from-[#FFFFFF]/20 to-[#FFFFFF73]/10 text-white border-2 border-[#840ECD] px-4 py-1 rounded-full"
+        >
+          {" "}
+          Contact Us{" "}
+        </Link>
 
         {/* Mobile Hamburger */}
         <Sheet>
@@ -175,7 +197,10 @@ const Navbar = (props: Props) => {
                   <div className="flex flex-col gap-2 pl-4">
                     {servicesMenu.map((service) => (
                       <SheetClose key={service.href} asChild>
-                        <Link href={service.href} className="text-white text-sm">
+                        <Link
+                          href={service.href}
+                          className="text-white text-sm"
+                        >
                           {service.label}
                         </Link>
                       </SheetClose>
@@ -184,7 +209,7 @@ const Navbar = (props: Props) => {
                 )}
               </div>
 
-                {links.slice(1).map((link) => (
+              {links.slice(1).map((link) => (
                 <SheetClose key={link.href} asChild>
                   <Link
                     href={link.href}
@@ -196,7 +221,6 @@ const Navbar = (props: Props) => {
                   </Link>
                 </SheetClose>
               ))}
-
             </nav>
 
             {/* Mobile Contact */}

@@ -46,7 +46,7 @@ const Industries = () => {
           us a lot. It helps us quickly understand industry-specific challenges
           to build smarter solutions.
         </p>
-      <div className="max-w-screen-2xl p-24 relative overflow-hidden rounded-4xl mx-auto md:w-[80%] my-12 border border-[#53029B40] shadow-[0_0_30px_0_#840ECD40]">
+      <div className="max-w-screen-2xl lg:p-24 p-12 relative overflow-hidden rounded-4xl mx-auto md:w-[80%] my-12 border border-[#53029B40] shadow-[0_0_30px_0_#840ECD40]">
         <Image
           src="/images/home/industries/shadow.png"
           alt="industries-bg"
@@ -54,7 +54,7 @@ const Industries = () => {
           height={1500}
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
-        <div className=" relative z-30 text-center gap-10 flex justify-center flex-wrap ">
+        <div className=" relative w-full z-30 text-center gap-10 flex justify-center flex-wrap ">
           <Image
             src="/images/home/industries/lines.png"
             alt="industries-bg"
@@ -63,7 +63,7 @@ const Industries = () => {
             className="absolute -z-10 lg:block hidden top-0 left-0 w-full h-full object-cover"
           />
           {industries.map((industry, index) => (
-            <div key={index} className="md:w-[30%] group p-4">
+            <div key={index} className="md:w-[30%] w-full group ">
               <Image
                 src={industry.icon}
                 alt={industry.title}

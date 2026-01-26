@@ -91,10 +91,10 @@ ${data.details}
         </p>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-[50%] mx-auto  space-y-6 mt-24"
+          className="md:w-[50%] w-[95%] mx-auto  space-y-6 mt-24"
         >
           {/* Name + Email */}
-          <div className="flex gap-4">
+          <div className="flex md:flex-row flex-col gap-4">
             <div className="w-full space-y-1">
               <label className="text-sm  font-medium text-white">
                 Who’s Behind This Idea?
@@ -126,7 +126,7 @@ ${data.details}
           </div>
 
           {/* Phone + Services */}
-          <div className="flex gap-4">
+          <div className="flex md:flex-row flex-col gap-4">
             <div className="w-full space-y-1">
               <label className="text-sm font-medium text-white">
                 Where Can We Connect With You?

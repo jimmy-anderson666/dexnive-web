@@ -79,7 +79,7 @@ export default function CallToAction({
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-stretch">
           {/* LEFT */}
           <div className="flex h-full flex-col justify-center">
-            <h3 className="text-4xl font-semibold pr-16 text-white">
+            <h3 className="text-4xl font-semibold lg:pr-16 text-white">
               {header}
             </h3>
 

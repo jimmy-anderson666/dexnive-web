@@ -19,13 +19,13 @@ const Vision = (props: Props) => {
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
 
-          <h1 className="text-4xl font-bold text-center absolute z-20 top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 group-hover:opacity-0">
+          <h1 className="text-4xl font-bold text-center absolute z-20 top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 lg:opacity-100 opacity-0 lg:group-hover:opacity-0">
             Our Mission
           </h1>
 
-          <div className="absolute top-0 left-0 w-full h-full px-12 py-16 bg-black/80 text-white flex flex-col items-center justify-center text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+          <div className="absolute top-0 left-0 w-full h-full px-12 py-16 bg-black/80 text-white flex flex-col items-center justify-center text-center opacity-100 lg:opacity-0 transition-opacity duration-500 lg:group-hover:opacity-100">
             <h1 className="text-4xl font-bold mb-6">Our Mission</h1>
-            <p className="text-lg">
+            <p className="text-sm lg:text-lg">
               Our mission is to build high-quality and high-performance digital
               products from ideas. We believe in disciplined execution,
               thoughtful design, and strong technical foundations. The aim is to
@@ -44,13 +44,13 @@ const Vision = (props: Props) => {
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
 
-          <h1 className="text-4xl font-bold text-center absolute z-20 top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 group-hover:opacity-0">
+          <h1 className="text-4xl font-bold text-center opacity-0 lg:opacity-100 absolute z-20 top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 lg:group-hover:opacity-0">
             The Vision
           </h1>
 
-          <div className="absolute top-0 left-0 w-full h-full px-12 py-16 bg-black/80 text-white flex flex-col items-center justify-center text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+          <div className="absolute top-0 left-0 w-full h-full px-12 py-16 bg-black/80 text-white flex flex-col items-center justify-center text-center opacity-100 lg:opacity-0 transition-opacity duration-500 lg:group-hover:opacity-100">
             <h1 className="text-4xl font-bold mb-6">The Vision</h1>
-            <p className="text-lg">
+            <p className="text-sm lg:text-lg">
               To become a trusted digital product partner known for precision,
               reliability, and sound judgment. We envision a future where
               digital products are built with intention, where technology

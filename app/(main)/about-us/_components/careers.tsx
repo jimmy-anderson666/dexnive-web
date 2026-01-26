@@ -20,7 +20,7 @@ const Careers = () => {
                 <SubHeader title="Careers" />
                 </div>
                 <h1 className="text-3xl md:text-6xl font-bold" >Grow With Dexnive</h1>
-                <p className="text-lg" >In Dexnive, great work starts with curious, motivated people. Our culture is built on collaboration, learning and shared ownership. Where the ideas are welcomed and the growth is encouraged. We look for the individuals who enjoy solving real problems, working with the smart teams and pushing their skills forward. Dexnive is the place for you if you really want to produce meaningful products and doing well in the fast paced environment.</p>
+                <p className="text-sm lg:text-lg" >In Dexnive, great work starts with curious, motivated people. Our culture is built on collaboration, learning and shared ownership. Where the ideas are welcomed and the growth is encouraged. We look for the individuals who enjoy solving real problems, working with the smart teams and pushing their skills forward. Dexnive is the place for you if you really want to produce meaningful products and doing well in the fast paced environment.</p>
                 <div className="flex items-center justify-center" >
                     <Link href={"/careers"} className="px-8 py-2 rounded-full border border-[#7C1FFF] text-white hover:bg-[#7C1FFF] transition" >See Our Open Positions</Link>
                 </div>

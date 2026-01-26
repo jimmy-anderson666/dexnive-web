@@ -16,7 +16,7 @@ const Hero = () => {
         <h1 className="text-3xl md:text-6xl md:w-[45%] w-full mx-auto text-center font-bold">
           Let’s Share How It All Started
         </h1>
-        <p className="text-base md:w-[60%]  w-[95%] pt-4 mx-auto text-center">
+        <p className="text-sm lg:text-base md:w-[60%]  w-[95%] pt-4 mx-auto text-center">
            Dexnive a digital product and engineering the brand helping startups, enterprises and growing the teams that turn the ideas into the dependable, high performing solutions through the clarity and discipline We work with businesses which care about how the things are built, not just what is delivered. By combining smart thinking, structured execution and the strong foundations. Dexnive creates products that perform in real environments and support long term growth with confidence.  
         </p>
         <div className="md:w-[50%] w-full pt-4 mx-auto text-center">
