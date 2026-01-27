@@ -4,40 +4,46 @@ import Image from "next/image";
 const testimonials1 = [
   {
     quote:
-      "Dexnive felt like an extension of our team. Clear communication, solid execution, and no unnecessary back‑and‑forth.",
+      "Dexnive felt like an extension of our team. Clear communication, solid execution, and no unnecessary back-and-forth.",
     name: "Alex Morgan",
     title: "Product Lead | SaaS Company",
-    image: "/images/home/testimonals/1.png",
+    image:
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
   },
   {
     quote:
       "They took our idea seriously and helped us shape it into something real. The process was smooth from start to launch.",
     name: "Priya Shah",
     title: "Founder | Startup",
-    image: "/images/home/testimonals/2.png",
+    image:
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80",
   },
   {
     quote:
       "What stood out was their transparency and reliability. We always knew where things stood and what was coming next.",
     name: "Daniel Brooks",
     title: "Operations Manager | Ecommerce Brand",
-    image: "/images/home/testimonals/3.png",
+    image:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
   },
   {
     quote:
       "Strong execution, thoughtful decisions, and a team that actually listens. We’d happily work with Dexnive again.",
     name: "Sarah Kim",
     title: "Head of Growth | Tech Company",
-    image: "/images/home/testimonals/4.png",
+    image:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
   },
   {
     quote:
       "From planning to delivery, everything felt structured and under control. Exactly what we needed.",
     name: "Michael Turner",
     title: "CTO | Digital Product Company",
-    image: "/images/home/testimonals/5.png",
+    image:
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
   },
 ];
+
 
 const Testimonals = () => {
   return (

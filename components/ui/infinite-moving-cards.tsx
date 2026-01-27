@@ -96,12 +96,15 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <div className="relative z-20 gap-4 mb-4  flex flex-row items-center">
+              <div className="relative z-20 gap-4 mb-4   flex flex-row items-center">
                 <Image
                   src={item.image}
                   alt={item.name}
                   width={50}
+                  loading="lazy"
+                  unoptimized
                   height={50}
+                  className="w-12 h-12 border-4 border-[#15062F] object-cover rounded-full"
                 />
                 <span className="flex flex-col gap-0">
                   <span className="text-sm  font-normal ">{item.name}</span>
