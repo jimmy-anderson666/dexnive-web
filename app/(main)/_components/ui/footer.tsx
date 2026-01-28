@@ -62,8 +62,7 @@ const Footer = () => {
           <div className="col-span-0"></div>
           <div className="text-sm ">
             <p className="mb-4 text-xs uppercase tracking-wider ">Phones</p>
-            <p>+92 21 345-222-44</p>
-            <p>+92 21 345-333-44</p>
+            <p>+92 21 334-886-28</p>
 
             <p className="mt-4">hello@dexnive.com</p>
 
