@@ -10,7 +10,7 @@ const containerVariants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.08, // delay between letters
+      staggerChildren: 0.08, 
     },
   },
 };
