@@ -64,18 +64,19 @@ const Footer = () => {
             <p className="mb-4 text-xs uppercase tracking-wider ">Phones</p>
             <p>+92 21 334-886-28</p>
 
-            <p className="mt-4">hello@dexnive.com</p>
+            <p className="mt-4">info@dexnive.com</p>
 
             <p className="mt-6 text-xs uppercase tracking-wider ">Address</p>
             <p className="mt-2">
-              Head Office Suite A-104,
-              <br />
-              Mehran Suites, Shahrah-e-Faisal,
+              {/* Head Office Suite A-104,
+              <br /> */}
+             Suite # 104, Emarah Suites, Sharah-e-Faisal
+ 
               <br />
               Karachi
             </p>
 
-            <p className="mt-4 text-xs  cursor-pointer">→ Get Directions</p>
+            {/* <p className="mt-4 text-xs  cursor-pointer">→ Get Directions</p> */}
           </div>
 
           <div className="text-sm ">
